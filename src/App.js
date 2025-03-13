@@ -2,8 +2,8 @@ import './App.css';
 import Logo from "./componentes/logo/index"
 import sacola from "./imgs/sacola.png"
 
-const TOpcao = ['Crie a sua conta', 'Entrar', 'Compras']
-const icones = [sacola]
+const navbarOpcoes = ['Crie a sua conta', 'Entrar', 'Compras']
+const navbarIcones = [sacola]
 
 function App() {
   return (
@@ -11,13 +11,13 @@ function App() {
       <header className='App-header'>
         <Logo></Logo>
         <ul className='opcao'>
-          { TOpcao.map( (texto) => (
+          { navbarOpcoes.map( (texto) => (
             <li className='opcoes'> <p>{texto}</p> </li>
           ))}
         </ul>
 
         <ul className='icones'>
-          {icones.map((icone) => (
+          {navbarIcones.map((icone) => (
             <li className='icone'><img src={icone} width="20" height="20"></img></li>
           ))}
         </ul>
