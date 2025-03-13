@@ -1,7 +1,9 @@
 import './App.css';
 import Logo from "./componentes/logo/index"
+import sacola from "./imgs/sacola.png"
 
-const TOpcao = ['Texto 01', 'Texto 02', 'Texto 03']
+const TOpcao = ['Crie a sua conta', 'Entrar', 'Compras']
+const icones = [sacola]
 
 function App() {
   return (
@@ -11,6 +13,12 @@ function App() {
         <ul className='opcao'>
           { TOpcao.map( (texto) => (
             <li className='opcoes'> <p>{texto}</p> </li>
+          ))}
+        </ul>
+
+        <ul className='icones'>
+          {icones.map((icone) => (
+            <li className='icone'><img src={icone} width="20" height="20"></img></li>
           ))}
         </ul>
       </header>

@@ -1,6 +1,8 @@
 .logo{
     display: flex;
-    font-size: 30px;
+    font-size: 15px;
+    color: #2d356c;
+    font-weight: bolder;
     align-items: center;
     padding: 20px;
   }
