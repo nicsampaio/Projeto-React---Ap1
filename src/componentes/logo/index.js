@@ -1,10 +1,10 @@
-import logo from '../../imgs/logo-mercado-livre.png';
+import logo from '../../imgs/logo-da-netflix.jpg';
 import "./estilo.css"
 
 function Logo(){
     return(
         <div className='logo'>
-            <img src={logo} width={150} alt='logo' className='logo-img'></img>
+            <img src={logo} width={180} alt='logo' className='logo-img'></img>
         </div>
     )
 }
