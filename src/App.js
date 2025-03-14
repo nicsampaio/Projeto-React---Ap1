@@ -2,7 +2,7 @@ import './App.css';
 import Logo from "./componentes/logo/index"
 import sacola from "./imgs/sacola.png"
 
-const navbarOpcoes = ['Crie a sua conta', 'Entrar', 'Compras']
+const navbarOpcoes = ['Crie a sua conta', 'Entrar', 'Compras', 'Ofertas', 'Cupons', 'Supermercado', 'Moda', 'Mercado Play', 'Vender', 'Contato']
 const navbarIcones = [sacola]
 
 function App() {
@@ -10,9 +10,9 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <Logo></Logo>
-        <ul className='opcao'>
+        <ul className='opcoes'>
           { navbarOpcoes.map( (texto) => (
-            <li className='opcoes'> <p>{texto}</p> </li>
+            <li className='opcao'> <p>{texto}</p> </li>
           ))}
         </ul>
 

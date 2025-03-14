@@ -11,21 +11,25 @@
     justify-content: center;
 }
 
-.opcoes{
+.opcao{
     display: flex;
     font-size: 16px;
     font-family: 'Inter Tight', sans-serif;
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-width: 120px;
+    min-width: 50px;
     padding: 0 5px;
     height: 100%;
     cursor: pointer;
 }
 
-.opcao{
+.opcoes{
     display: flex;
+}
+
+.opcao:hover{
+    color: grey;
 }
 
 li{
